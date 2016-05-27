@@ -1,0 +1,35 @@
+{
+  "name": "tslint-vso-formatter",
+  "version": "0.1.0",
+  "description": "A TSLint formatter for Visual Studio Online and Team Foundation Server",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https:github.com/EnableSoftware/tslint-vso-formatter.git"
+  },
+  "bugs": {
+    "url": "https:github.com/EnableSoftware/tslint-vso-formatter/issues"
+  },
+  "keywords": [
+    "typescript",
+    "tslint",
+    "vso",
+    "formatter"
+  ],
+  "author": "Enable Software <hello@enable.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "tslint": "^3.10.2"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.1",
+    "tslint": "^3.10.2",
+    "typescript": "^1.8.10"
+  },
+  "scripts": {
+    "postinstall": "typings install",
+    "prepublish": "tsc",
+    "test": "npm run prepublish && mocha",
+    "lint": "tslint lib/*.ts test/*.ts index.ts --exclude **/*.d.ts"
+  }
+}

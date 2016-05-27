@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": true,
+        "sourceMap": false
+    },
+	"files": [
+        "index.ts",
+        "test/vsoFormatter.tests.ts",
+        "typings/index.d.ts"
+	]
+}
