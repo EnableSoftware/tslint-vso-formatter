@@ -4,7 +4,7 @@ A TSLint formatter for Visual Studio Online and Team Foundation Server.
 
 This is a custom formatter for [TSLint](https://palantir.github.io/tslint/)
 which uses Visual Studio Online and Team Foundation Server
-[logging commands](https://github.com/Microsoft/vsts-tasks/blob/master/docs/authoring/commands.md)
+[logging commands](https://github.com/Microsoft/vsts-tasks/blob/main/docs/authoring/commands.md)
 to integrate the TSLint linting results with Visual Studio Online and Team 
 Foundation Server build output.
 
@@ -56,3 +56,4 @@ available to be `require`d, .e. that is has been placed with your application
     console.log(result.output);
     // This will ouput:
     // ##vso[task.logissue type=warning;sourcepath=greeter.ts;linenumber=4;columnnumber=16;code=quotemark;]' should be "
+
